@@ -1,43 +1,30 @@
-# Wazuh Blue Team Lab
+# 🛡️ Blue Team Lab – Wazuh SOC Environment
 
-Mini laboratório Blue Team utilizando Wazuh e Windows para monitoramento de eventos de autenticação, PowerShell e firewall.
+Mini laboratório Blue Team utilizando :contentReference[oaicite:0]{index=0} e Windows para simulação e monitoramento de eventos de segurança em ambiente controlado.
 
-## Objetivo
+---
 
-Praticar:
-- Monitoramento de logs
-- Falhas de login Windows
-- Eventos PowerShell
-- Firewall
-- Criação de regras simples no Wazuh
+## 🎯 Objetivo
 
-## Tecnologias
+Este laboratório tem como objetivo praticar conceitos fundamentais de Blue Team e SOC, incluindo:
 
-- Wazuh
-- Windows 10
-- Ubuntu Server
-- VirtualBox
+- Monitoramento e análise de logs
+- Detecção de falhas de autenticação no Windows
+- Monitoramento de execução de PowerShell
+- Auditoria de eventos de firewall
+- Criação de regras básicas de detecção no Wazuh
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- Wazuh (SIEM / XDR)
+- Windows 10 (Endpoint)
+- Ubuntu Server (Wazuh Manager)
+- VirtualBox (Ambiente virtualizado)
 - PowerShell
 - Windows Event Logs
 
-## Estrutura do ambiente
+---
 
-Wazuh Server → coleta e analisa logs
-
-Windows Client → gera eventos e envia logs
-
-## Eventos monitorados
-
-- Event ID 4624 (login bem-sucedido)
-- Event ID 4625 (falha de login)
-- Eventos PowerShell
-- Alterações de firewall
-- Criação de usuários locais
-
-## Objetivo futuro
-
-Expandir o laboratório com:
-- Sysmon
-- Active Directory
-- Detecção avançada
-- Regras customizadas
+## 🏗️ Arquitetura do Ambiente
