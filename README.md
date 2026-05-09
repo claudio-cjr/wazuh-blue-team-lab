@@ -13,7 +13,7 @@ Praticar:
 - Wazuh
 - Ubuntu Server
 - VirtualBox
-- Linux
+- Windows
 - SSH
 - UFW Firewall
 
@@ -21,4 +21,4 @@ Praticar:
 
 Wazuh Server -> coleta e analisa logs
 
-Ubuntu Client -> gera eventos e envia logs
+Windows Client -> gera eventos e envia logs
