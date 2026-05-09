@@ -1,6 +1,6 @@
 # 🛡️ Blue Team Lab – Wazuh SOC Environment
 
-Mini laboratório Blue Team utilizando :contentReference[oaicite:0]{index=0} e Windows para simulação e monitoramento de eventos de segurança em ambiente controlado.
+Mini laboratório Blue Team utilizando Ubuntu Server e Windows para simulação e monitoramento de eventos de segurança em ambiente controlado.
 
 ---
 
