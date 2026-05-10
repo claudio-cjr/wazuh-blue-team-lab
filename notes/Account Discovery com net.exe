@@ -1,0 +1,51 @@
+# Caso 3 — Account Discovery com net.exe
+
+## 🎯 Hipótese
+
+Enumeração de contas locais utilizando comandos administrativos do Windows.
+
+---
+
+## 🔎 Evidências
+
+* Execução de `net.exe`
+* Execução de `net1.exe`
+* Consulta de usuários locais
+* Sysmon Event ID 1 (Process Create)
+
+---
+
+## 📊 Eventos Observados
+
+* Process Create
+* Linha de comando monitorada
+* Parent Process identificado
+* Hashes do processo registrados
+
+---
+
+## 🚨 Severidade
+
+Média
+
+---
+
+## 🧠 MITRE ATT&CK
+
+* T1087 — Account Discovery
+
+---
+
+## 🧠 Análise
+
+O comando `net user` foi utilizado para enumeração de contas locais do sistema operacional.
+
+Esse comportamento é frequentemente observado em fases de reconhecimento pós-exploração e movimentação lateral.
+
+O Sysmon registrou a criação do processo e o Wazuh correlacionou automaticamente a atividade.
+
+---
+
+## ✅ Resultado
+
+O laboratório validou monitoramento de criação de processos e detecção de técnicas de descoberta de contas locais.
