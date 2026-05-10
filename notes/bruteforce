@@ -1,1 +1,42 @@
+# Caso 1 — Tentativa de Brute Force
+
+## 🎯 Hipótese
+
+Possível tentativa de brute force contra conta Windows local.
+
+---
+
+## 🔎 Evidências
+
+* Múltiplos eventos Windows Event ID 4625
+* Falhas consecutivas de autenticação
+* Repetição de tentativas de login em curto intervalo
+
+---
+
+## 📊 Eventos Observados
+
+* Event ID 4625 → Failed Logon
+* Logs coletados pelo Wazuh Agent
+* Correlação realizada via Wazuh Dashboard
+
+---
+
+## 🚨 Severidade
+
+Alta
+
+---
+
+## 🧠 Análise
+
+Múltiplas falhas de autenticação podem indicar tentativa automatizada de descoberta de senha ou acesso não autorizado.
+
+Em ambientes corporativos, esse comportamento é frequentemente associado a ataques de brute force e password spraying.
+
+---
+
+## ✅ Resultado
+
+O Wazuh registrou e correlacionou os eventos de falha de autenticação, permitindo análise centralizada via dashboard.
 
