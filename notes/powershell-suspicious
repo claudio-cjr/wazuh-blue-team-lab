@@ -1,0 +1,49 @@
+# Caso 2 — Atividade Suspeita via PowerShell
+
+## 🎯 Hipótese
+
+Execução suspeita de PowerShell com criação de arquivo temporário `.ps1`.
+
+---
+
+## 🔎 Evidências
+
+* Execução de `powershell.exe`
+* Criação de arquivo `.ps1` em diretório TEMP
+* Evento Sysmon ID 11 (File Create)
+* Correlação automática no Wazuh
+
+---
+
+## 📊 Eventos Observados
+
+* Sysmon Event ID 11
+* Criação de arquivo temporário PowerShell
+* Monitoramento via EventChannel
+* Alertas no Wazuh Dashboard
+
+---
+
+## 🚨 Severidade
+
+Alta (Rule Level 15)
+
+---
+
+## 🧠 MITRE ATT&CK
+
+* T1105 — Ingress Tool Transfer
+
+---
+
+## 🧠 Análise
+
+O PowerShell gerou um arquivo temporário `.ps1` no diretório TEMP do usuário, comportamento frequentemente associado a execução de scripts automatizados, download de payloads e atividade maliciosa.
+
+O Wazuh correlacionou automaticamente o comportamento como potencial atividade suspeita.
+
+---
+
+## ✅ Resultado
+
+O laboratório validou a integração entre Sysmon e Wazuh para monitoramento avançado de PowerShell e criação de arquivos suspeitos.
