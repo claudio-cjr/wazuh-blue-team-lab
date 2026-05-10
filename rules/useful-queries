@@ -1,0 +1,47 @@
+# Useful Queries — Wazuh Discover
+
+## Falhas de login
+
+```text id="w8m3qp"
+data.win.system.eventID:4625
+```
+
+---
+
+## Login bem-sucedido
+
+```text id="q2v7rk"
+data.win.system.eventID:4624
+```
+
+---
+
+## Process Create (Sysmon)
+
+```text id="j9q1xn"
+data.win.system.eventID:1
+```
+
+---
+
+## File Create (Sysmon)
+
+```text id="r4m8wt"
+data.win.system.eventID:11
+```
+
+---
+
+## Eventos PowerShell
+
+```text id="p7q2vk"
+powershell.exe
+```
+
+---
+
+## Account Discovery
+
+```text id="x5m9zr"
+net.exe
+```
